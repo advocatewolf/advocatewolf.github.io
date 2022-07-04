@@ -1,0 +1,2 @@
+1. Fix Background Image in homeMain
+2. % font-size depending on size of list container.

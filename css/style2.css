@@ -35,10 +35,10 @@ body {
 /******************************************
 /* LAYOUT
 /*******************************************/
-header, header nav ul, main, .fourColumn, .threeColumn, footer{
+header, header nav ul, .homeMain, .fourColumn, .threeColumn, footer{
   display: flex;
   justify-content: space-between;
-  padding: 0 5%;
+  /* padding: 0 5%; */
   /* border: #001440 solid 1px; */
 }
 body > * > *{
@@ -49,11 +49,9 @@ body > * > *{
   padding: 0 5% 1% 5%;
 }
 header{
-  padding: 0% 5%;
-}
-header{
   background: linear-gradient(to right, white, rgba(242, 189, 163, 1));
   height: 80px;
+  padding: 0% 5%;
 }
 header nav{
   flex: 0 1 90%;
@@ -71,6 +69,7 @@ header nav ul{
 header nav ul li{
   flex-grow: 1;
   justify-content: flex-end;
+  min-width: 120px;
 }
 header nav ul li a{
   color: white;
@@ -84,14 +83,31 @@ header nav ul li a{
 }
 
 header img{
- justify-content: flex-start;
+  justify-content: flex-start;
   max-width: 80px;
   max-height: 80px;
 }
-main{
-  justify-content: space-around;
+.homeMain{
+  display: flex;
+  min-height: 400px;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url("../img/headshot.jpg");
+  background-repeat: no-repeat;
+  background-size: 400px 400px;
+  background-position: 20%;
 }
-main img{
+.homeMain section{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 40%;
+  height: 50%;
+}
+.homeMain img{
   max-width: 400px;
   max-height: 400px;
 }
