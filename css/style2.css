@@ -29,6 +29,11 @@ svg{
   fill: white;
 }
 body {
+  display: flex;
+  flex-direction: column;
+}
+body > *{
+  flex: 1;
 }
 
 
@@ -50,7 +55,8 @@ body > * > *{
 }
 header{
   background: linear-gradient(to right, white, rgba(242, 189, 163, 1));
-  height: 80px;
+  min-height: 50px;
+  height: 2%;
   padding: 0% 5%;
 }
 header nav{
@@ -106,6 +112,7 @@ header img{
   flex-direction: column;
   min-height: 40%;
   height: 50%;
+  flex: 1;
 }
 .homeMain img{
   max-width: 400px;
