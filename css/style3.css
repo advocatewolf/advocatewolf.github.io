@@ -1,0 +1,83 @@
+      /* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+*{
+  font-family: 'Oswald', sans-serif;
+  list-style: none;
+}
+body{
+  display: flex;
+  flex-direction: column;
+}
+img{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header{
+  height: calc(10vh);
+  min-height: 60px;
+  background: linear-gradient(to right, white, rgba(242, 189, 163, 1));
+  display: flex;
+  justify-content: space-between;
+}
+header > *{
+  display: flex;
+  flex: 1;
+}
+header nav{
+  flex: 1 0 40%;
+}
+header nav ul{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0;
+}
+header li{
+  display: flex;
+  align-items: center;
+}
+
+.wordLink{
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-end;
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 1px  #001440;
+}
+
+.container{
+  width: 100%;
+  border: 1px solid black;
+  padding: 0 5%;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
