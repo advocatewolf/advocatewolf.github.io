@@ -27,6 +27,7 @@
 body{
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 img{
   max-width: 100%;
@@ -36,6 +37,10 @@ body >.container{
   display: flex;
   flex-direction: row;
 }
+body > *{
+}
+
+
 /******************************************
 /* LAYOUT
 /*******************************************/
@@ -101,6 +106,19 @@ header li{
   text-shadow: 1px 1px 1px #001440  ;
 }
 
+.homeMain h1, .homeMain h4{
+  background: linear-gradient(to right, rgba(0,0,0,0) 50%, rgba(0, 20, 68, 1));
+}
+
+#bookWithMe{
+  background: linear-gradient(215deg, #001440, #f2bda3);
+  padding: 10px 5px;
+  /* border: 1px solid white; */
+  border-radius: 10px;
+  color: white;
+  text-shadow: 1px 1px 1px #001440 ;
+}
+
 .fourColumn section, .threeColumn section{
   padding: 0 2%;
   flex-direction: column;
@@ -109,9 +127,13 @@ header li{
   display: flex;
 }
 
-.fourColumn p{
+.fourColumn h3, .threeColumn h3{
+margin: 2%;
+}
+.fourColumn p, .threeColumn p{
   justify-content: center;
   text-align: center;
+  margin: 0
 }
 
 .slickSlider{
@@ -123,28 +145,37 @@ header li{
   display: flex;
   flex-direction: column;
 }
-.footer {
+footer.footer {
+  background: #001440;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100px;
-  background: #001440;
-  padding: 1% 5%;
+  height: calc(10vh);
+  min-height: 60px;
+  padding: 0.8% 5%;
+  margin-top: 1%;
 }
 .footer nav{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 200px;
+  flex: 1;
+  width: inherit;
 }
 .footer ul{
   width: 100%;
   padding: 0;
   display: flex;
   justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: inherit;
 }
 .footer ul li {
-  padding: 0 2%;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 1%;
 }
 .footer img {
   max-width: 30px;
@@ -152,6 +183,7 @@ header li{
 }
 .footer p{
   color: white;
+  margin: 0;
 }
 
 /******************************************
