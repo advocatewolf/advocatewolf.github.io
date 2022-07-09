@@ -89,25 +89,48 @@ header li{
   padding: 0 5%;
 }
 
-.homeMain{
+.homeMain, .aboutMain{
   display: flex;
   align-items: center;
   justify-content: center;
-  height: calc(50vh);
+  height: calc(70vh);
+  background-image: url("../img/Beach.jpg");
+  background-repeat: no-repeat;
+  background-position: 0% 30%;
+  background-size: 100%;
+  /* background-clip: content-box ; */
+  padding: 0;
+  /* background-size: contain; */
+}
+main.aboutMain{
   background-image: url("../img/headshot.jpg");
   background-repeat: no-repeat;
-  background-position: 25% 75%;
-  background-clip: content-box ;
+  background-clip: content-box;
   background-size: contain;
+  background-position: 100% 0%;
 }
 
-.homeMain section > *{
+.homeMain section > *, .aboutMain section > *{
   color: white;
   text-shadow: 1px 1px 1px #001440  ;
 }
+.homeMain section, .aboutMain section{
+  flex: 1;
+  height: inherit;
+}
+.homeMain section img, .aboutMain section img{
+  size: inherit;
+}
+
+.aboutMain section{
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  padding: 0 50% 0 5%;
+}
 
 .homeMain h1, .homeMain h4{
-  background: linear-gradient(to right, rgba(0,0,0,0) 50%, rgba(0, 20, 68, 1));
+  /* background: linear-gradient(to right, rgba(0,0,0,0) 50%, rgba(0, 20, 68, 1)); */
 }
 
 #bookWithMe{
@@ -119,7 +142,7 @@ header li{
   text-shadow: 1px 1px 1px #001440 ;
 }
 
-.fourColumn section, .threeColumn section{
+.fourColumn section, .threeColumn section, .twoColumn section{
   padding: 0 2%;
   flex-direction: column;
   align-items: center;
